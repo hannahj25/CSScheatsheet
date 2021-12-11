@@ -18,16 +18,36 @@
             <div class="column">
                 <h2>Flexbox Row</h2>
                 <p>Use these three properties to create a Flexbox row layout.</p>
+                <pre class="gradient">
+                    .row {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                    }
+                </pre>
 
             </div>
             <div class="column">
                 <h2>Flexbox Column</h2>
                 <p>Use this to create a Flexbox column layout.</p>
+                <pre class="gradient">
+                    .column {
+                        display: flex;
+                        flex-direction: column
+                    }
+                </pre>
 
             </div>
             <div class ="column">
                 <h2>Css Grid Layout</h2>
                 <p>Build a 12-column layout using CSS Grid.</p>
+                <pre class="gradient">
+                    .grid {
+                        display: grid;
+                        width: 100%;
+                        grid-template-columns: repeart (12, lfr);
+                    }
+                </pre>
 
             </div>
         </section>
@@ -36,16 +56,37 @@
             <div class="column">
                 <h2>Linear Gradients</h2>
                 <p>This will create a background linear gradient from top to bottom.</p>
+                <pre class="gradient">
+                    .linear-gradient-background {
+                        background: linear-gradient(#E94B8F;, #F15A60);
+                    }
+                </pre>
 
             </div>
             <div class="column">
                 <h2>Box Transition Glow</h2>
                 <p>Use transition and box shadows to glow on hover.</p>
+                <pre class="gradient">
+                    .code-card .card-header {
+                        border-radius: 8px;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    .code-card:hover,
+                    . code-card:hover .card-header {
+                        box-shadow: inset 0px 0px 8px #E94B8F, 0 0 15px #E94B8F;
+                    }
+                </pre>
 
             </div>
             <div class="column">
                 <h2>Overlay Card with Title</h2>
                 <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+                <pre class="gradient">
+                    .card-header {
+                        position: relative;
+                        margin-top: -20px;
+                    }
+                </pre>
 
             </div>
         </section>

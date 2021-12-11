@@ -1,12 +1,14 @@
 :root {
-    --pink: #972A7A;
+    --pink: #E94B8F;
     --white: #fff;
+    --black: #000000;
     --centertext: center;
 }
 
 body {
-    background-color: lightslategrey;
+    background-color: var(--black);
 }
+
 h1 {
     color: var(--pink);
     text-align: var(--centertext);
@@ -24,13 +26,32 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 50px;
 }
 
 .column {
     display: flex;
     flex-direction: column;
+    border: 2px dashed var(--white);
+    flex: 1
 }
 
 h2 {
-    border: 2px solid white;
+    border: 2px solid var(--white);
+    color: var(--pink);
+    font-size: 30px;
+    position: relative;
+    margin-top: -30px;
+    background-color: var(--black);
+}
+
+p {
+    color: var(--pink);
+    font-size: 20px;
+}
+
+.gradient {
+    color: var(--white);
+    background: linear-gradient(var(--pink), #F15A60);
+    font-size: 18px;
 }
