@@ -54,4 +54,14 @@ p {
     color: var(--white);
     background: linear-gradient(var(--pink), #F15A60);
     font-size: 18px;
+    padding: 10px;
+    -moz-user-select: all;
+    -webkit-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+}
+
+ pre::selection {
+     color: var(--pink);
+     background-color: var(--black);
 }
