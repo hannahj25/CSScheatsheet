@@ -1,0 +1,36 @@
+:root {
+    --pink: #972A7A;
+    --white: #fff;
+    --centertext: center;
+}
+
+body {
+    background-color: lightslategrey;
+}
+h1 {
+    color: var(--pink);
+    text-align: var(--centertext);
+    font-size: 50px;
+}
+
+#subtitle {
+    color: var(--white);
+    text-align: var(--centertext);
+    font-size: 24px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    border: 2px solid white;
+}
