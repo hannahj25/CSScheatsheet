@@ -4,10 +4,16 @@
     --black: #000000;
     --sunset: #F15A60;
     --centertext: center;
+    --arial: Arial, Helvetica, sans-serif;
 }
 
 body {
     background-color: var(--black);
+}
+
+header {
+    margin: 80px;
+    font-family: var(--arial);
 }
 
 h1 {
@@ -26,23 +32,29 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 50px
+    justify-content: space-evenly;
+    margin: 100px;
 }
 
 .column {
     display: flex;
     flex-direction: column;
+    height: 300px;
+    width: 550px;
     border: 2px dashed var(--white);
-    }
+    font-family: var(--arial);
+}
 
 h2 {
     border: 2px solid var(--white);
     border-radius: 10px;
+    padding: 10px 20px 10px 20px;
     color: var(--pink);
-    font-size: 30px;
+    font-size: 32px;
     position: relative;
+    width: fit-content;
     margin-top: -30px;
+    margin-left: 20px;
     background-color: var(--black);
     transition: all 0.5s ease-in-out;
 }
@@ -50,14 +62,18 @@ h2 {
 p {
     color: var(--pink);
     font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
 }
 
 pre {
     color: var(--white);
-    background: linear-gradient(var(--pink), var(--sunset));
     font-size: 18px;
     padding: 10px;
+    background: linear-gradient(var(--pink), var(--sunset));
     border-radius: 10px;
+    margin: 10px;
     -moz-user-select: all;
     -webkit-user-select: all;
     -ms-user-select: all;
@@ -72,4 +88,19 @@ pre:hover, h2:hover {
  pre::selection {
      color: var(--pink);
      background-color: var(--black);
+}
+
+footer {
+    color: var(--pink);
+    text-align: var(--centertext);
+    font-size: 24px;
+    font-family: var(--arial);
+}
+
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
 }
