@@ -2,6 +2,7 @@
     --pink: #E94B8F;
     --white: #fff;
     --black: #000000;
+    --sunset: #F15A60;
     --centertext: center;
 }
 
@@ -26,23 +27,24 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 50px;
+    margin: 50px
 }
 
 .column {
     display: flex;
     flex-direction: column;
     border: 2px dashed var(--white);
-    flex: 1
-}
+    }
 
 h2 {
     border: 2px solid var(--white);
+    border-radius: 10px;
     color: var(--pink);
     font-size: 30px;
     position: relative;
     margin-top: -30px;
     background-color: var(--black);
+    transition: all 0.5s ease-in-out;
 }
 
 p {
@@ -50,15 +52,21 @@ p {
     font-size: 20px;
 }
 
-.gradient {
+pre {
     color: var(--white);
-    background: linear-gradient(var(--pink), #F15A60);
+    background: linear-gradient(var(--pink), var(--sunset));
     font-size: 18px;
     padding: 10px;
+    border-radius: 10px;
     -moz-user-select: all;
     -webkit-user-select: all;
     -ms-user-select: all;
     user-select: all;
+    transition: all 0.5s ease-in-out;
+}
+
+pre:hover, h2:hover {
+    box-shadow: 0px 0px 20px var(--sunset);
 }
 
  pre::selection {
